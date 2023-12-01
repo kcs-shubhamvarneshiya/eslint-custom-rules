@@ -12,7 +12,9 @@ module.exports = {
   rules: {
     // set `warn` instead of `error` if required
     "rules/no-console": "error",
-    "rules/max-params" : "error"
+    "rules/max-params" : "error",
+    "rules/camel-case.js" : "error",
+    "rules/var-length.js" : "error"
   },
 };
 
