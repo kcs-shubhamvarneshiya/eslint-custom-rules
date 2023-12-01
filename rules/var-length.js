@@ -1,32 +1,29 @@
 /**
- * @author : Shubham Varneshiya
- * @version : 1.0.4
+ * @author : "Shubham Varneshiya"
+ * @version : 1.0.8
  */
 module.exports = {
     meta: {
       type: "suggestion",
       docs: {
-        description: "Enforce camel case for variable names",
+        description: "Enforce length of variable names",
         category: "Stylistic Issues",
         recommended: true
       },
-      schema: [] 
+      schema: []
     },
     create(context) {
-      function isCamelCase(name) {
-        return /^[a-z][a-zA-Z0-9]*$/.test(name);
-      }
-  
       return {
         VariableDeclarator(node) {
           const name = node.id.name;
-          if (name && !isCamelCase(name)) {
+          if (name && name.length <= 2) {
             context.report({
               node,
-              message: "Variable names should be in camel case"
+              message: "Variable length should be more then 2 chararter"
             });
           }
         }
       };
     }
   };
+  

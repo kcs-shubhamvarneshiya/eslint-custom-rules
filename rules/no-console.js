@@ -1,9 +1,13 @@
+/**
+ * @author : Shubham Varneshiya
+ * @version : 1.0.2
+ */
 module.exports = {
     meta: {
       type: "suggestion",
       docs: {
         description: "Disallow console.log() in code",
-        category: "Best Practices",
+        category: "Stylistic Issues",
         recommended: true,
       },
       schema: [],

@@ -1,9 +1,14 @@
+/**
+ * @author : Shubham Varneshiya
+ * @version : 1.0.3
+ */
+
 module.exports = {
     meta: {
       type: 'suggestion',
       docs: {
         description: 'Enforce a maximum number of parameters for functions',
-        category: 'Best Practices',
+        category: 'Stylistic Issues',
         recommended: true,
       },
       schema: [
